@@ -5,6 +5,9 @@ import {UserOutlined, AppstoreOutlined} from '@ant-design/icons'
 import HeaderComponent from '../../components/HeaderComponent/HeaderComponent';
 import AdminUser from '../../components/AdminUser/AdminUser';
 import AdminProduct from '../../components/AdminProduct/AdminProduct';
+
+
+
 const AdminPage = () => {
 
 
@@ -13,9 +16,7 @@ const AdminPage = () => {
     getItem('Sản phẩm', 'product', <AppstoreOutlined />,)
     ];
 
-  const [keySelected, setKeySelected] = useState('');
-  
-  console.log('keySelected', keySelected)
+  const [keySelected, setKeySelected] = useState('');  
   const handleOnCLick = ({ key }) => {
     setKeySelected(key)
   }
@@ -47,7 +48,6 @@ const AdminPage = () => {
         mode="inline"              
         style={{ width: 256,
         boxShadow: '1px 1px 2px #ccc',
-        height: '100vh'
         }}
         items={items}
         onClick={handleOnCLick}

@@ -1,7 +1,7 @@
 // import { Button } from 'antd'
 import React from 'react'
 import { SearchOutlined } from '@ant-design/icons';
-import InputComponent from '../InpuComponets/InputComponent';
+import InputComponent from '../InputComponets/InputComponent'
 import ButtonComponent from '../ButtonComponents/ButtonComponent';
 const ButtonInputSearch = (props) => {
   const { size, placeholder, textButton, bordered, backgroundColorInput = "#fff", backgroundColorButton = "#fff",

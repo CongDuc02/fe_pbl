@@ -164,7 +164,7 @@ const ProfilePage = () => {
 
                     <WrapperUploadFile onChange={handleOnchangeAvatar} maxCount={1} >
                             <Button icon={<UploadOutlined />}>Select File</Button>
-                        </WrapperUploadFile>
+                    </WrapperUploadFile>
                         {avatar && (
                             <img src={avatar} style={{
                                 height: '60px',

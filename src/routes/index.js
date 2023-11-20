@@ -59,7 +59,7 @@ export const routes = [
 
   {
     path: '*',
-    page: NotfoundPage,
-    isShowHeader: false
+    page: NotfoundPage
+    // isShowHeader: false
   }
 ]

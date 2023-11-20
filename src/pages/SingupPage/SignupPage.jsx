@@ -26,7 +26,7 @@ const SignupPage = () => {
     data => UserService.signupUser(data)
   )
 
-  const { data, isPending, isSuccess, isError } = mutation
+  const { data, isLoading, isSuccess, isError } = mutation
 
   useEffect(() => {
     if (isSuccess) {
@@ -103,7 +103,7 @@ const SignupPage = () => {
         <InputForm placeholder='Nhập lại mật khẩu' type={isShowConfirmPassword ? "text" : "password"} onChange={handleOnchangeConfirmPassword}/>
         </div>
         {data?.status === 'ERR' && <span style={{ color: 'red' }}>{data?.message}</span>}
-        <Loading isLoading={isPending}>
+        <Loading isLoading={isLoading}>
         <ButtonComponent styleButton={{ background: "red", height: '48px', width: '100%',border: 'none', margin: '26px 0 20px' }}
           disabled={!email.length || !password.length || !confirmPassword.length}
           onClick={handleSignUp}

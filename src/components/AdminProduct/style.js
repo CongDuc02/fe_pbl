@@ -22,3 +22,5 @@ export const WrapperUploadFile = styled(Upload)`
         display: none
     }
 `
+
+
